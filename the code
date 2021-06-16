@@ -1,0 +1,66 @@
+#the first problem
+n=int(input())
+sum=0
+for i in range(4):
+    sum=sum+n%10
+    n=n//10
+print(sum)
+#the second problem
+leg1=int(input())
+leg2=int(input())
+print(leg1*leg2/2)
+#the third problem
+a1=int(input())
+a2=int(input())
+n=int(input())
+d=a2-a1
+print(a1+(n-1)*d)
+#the fourth problem
+n=int(input())
+if n%100==0:
+    print(n//100)
+else:
+    print(n//100+1)
+#the sixth problem
+py=int(input())
+px=int(input())
+print(py+1,px-2)
+print(py-1,px-2)
+print(py-1,px+2)
+print(py-2,px-1)
+print(py-2,px+1)
+print(py+1,px+2)
+print(py+2,px+1)
+print(py+2,px-1)
+#the fifth problem of the practical(this and the next problem remained after the class)
+number=int(input())
+sum_of_divisors=0
+for i in range(1,number+1):
+    if number%i==0:
+        sum_of_divisors+=1
+print(sum_of_divisors)
+#sixth problem of the practical
+a=float(input())
+b=float(input())
+c=float(input())
+from math import sqrt
+if a==0:
+    print("Non-quadratic equation")
+    if b==0:
+        if c!=0:
+            print("No solutions")  
+        else:
+            print("Infinite solution")
+    else:
+        print("One solution:"+str(-c/b))
+else:
+    D = b * b - 4 * a * c
+    if D>=0:
+        X1 = (-b + sqrt(D)) / 2 * a
+        X2 = (-b - sqrt(D)) / 2 * a
+        print("Quadratic equations")
+        print("Discriminant:"+str(int(D)))
+        print("Quadratic equation:"+str(int(X1))+" "+str(int(X2)))
+    else:
+        print("Discriminant:"+str(D))
+        print("No solutions")
