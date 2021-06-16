@@ -21,6 +21,11 @@ if n%100==0:
     print(n//100)
 else:
     print(n//100+1)
+#the fifth problem
+n1=int(input())
+n2=int(input())
+print(n2-1)
+print(n1-1)
 #the sixth problem
 py=int(input())
 px=int(input())
